@@ -17,11 +17,9 @@ makeCacheMatrix <- function(x = matrix()) {
     #set value of original matrix and clear inverted
     x <<- y
     inverted <<- NULL
-    
   }
   
   getx <- function() x #returns value of x
-  
   setInverted <- function(inverted) inverted <<- inverted #sets value for inverted matrix
   getInverted <- function() inverted #returns value for inverted
   
@@ -45,7 +43,6 @@ cacheSolve <- function(x, ...) {
     x$setInverted(inverted)
     message('Inverted matrix:')
     return(inverted)
-    
   }
   
 }
